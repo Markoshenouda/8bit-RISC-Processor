@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : area
+Design : Processor_Top
+Version: K-2015.06
+Date   : Wed Dec 24 20:14:14 2025
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/last_version/syn/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          993
+Number of nets:                          7974
+Number of cells:                         7055
+Number of combinational cells:           4650
+Number of sequential cells:              2380
+Number of macros/black boxes:               0
+Number of buf/inv:                        883
+Number of references:                      41
+
+Combinational area:              48502.398654
+Buf/Inv area:                     3987.836304
+Noncombinational area:           50864.032509
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 99366.431163
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------
+Processor_Top                     99366.4312    100.0    988.4280     25.8874  0.0000  Processor_Top
+add_154                             107.0797      0.1    107.0797      0.0000  0.0000  Processor_Top_DW01_inc_1
+add_521                             107.0797      0.1    107.0797      0.0000  0.0000  Processor_Top_DW01_inc_0
+alu_inst                           2811.1363      2.8   2095.7027      0.0000  0.0000  alu
+alu_inst/add_113                    107.0797      0.1    107.0797      0.0000  0.0000  alu_DW01_inc_0
+alu_inst/add_16                     231.8099      0.2    231.8099      0.0000  0.0000  alu_DW01_add_0
+alu_inst/add_18                     110.6098      0.1    110.6098      0.0000  0.0000  alu_DW01_inc_1
+alu_inst/sub_17                     265.9342      0.3    265.9342      0.0000  0.0000  alu_DW01_sub_0
+branch_unit                         137.6739      0.1    137.6739      0.0000  0.0000  Branch_Unit
+ccr_inst                            197.6856      0.2     94.1360    103.5496  0.0000  CCR
+control                             563.6393      0.6    563.6393      0.0000  0.0000  Control_Unit
+dmem                              84311.7313     84.8  40933.8641  43377.8672  0.0000  Data_Memory
+ex_mem_reg                         1978.0327      2.0      5.8835   1972.1492  0.0000  EX_MEM_Register
+fwd_unit                            125.9069      0.1    125.9069      0.0000  0.0000  Forwarding_Unit
+hazard_unit                         122.3768      0.1    122.3768      0.0000  0.0000  Hazard_Detection_Unit
+id_ex_reg                          2403.9981      2.4    488.3305   1915.6676  0.0000  ID_EX_Register
+if_id_reg                           582.4665      0.6    168.2681    414.1984  0.0000  IF_ID_Register
+imem                                 28.2408      0.0     28.2408      0.0000  0.0000  Instruction_Memory_0
+imem_imm                             28.2408      0.0     28.2408      0.0000  0.0000  Instruction_Memory_1
+int_unit                            594.2335      0.6    180.0351    414.1984  0.0000  Interrupt_Unit
+mem_wb_reg                         1195.5272      1.2      4.7068   1190.8204  0.0000  MEM_WB_Register
+out_unit                            289.4682      0.3     82.3690    207.0992  0.0000  Output_Unit
+pc_unit                             540.1053      0.5    333.0061    207.0992  0.0000  PC_Unit
+rf                                 1625.0227      1.6    796.6259    828.3968  0.0000  reg_file
+sp_unit                             602.4704      0.6    288.2915    207.0992  0.0000  Stack_Pointer_Unit
+sp_unit/add_31                      107.0797      0.1    107.0797      0.0000  0.0000  Stack_Pointer_Unit_DW01_inc_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------
+Total                                                  48502.3987  50864.0325  0.0000
+
+1

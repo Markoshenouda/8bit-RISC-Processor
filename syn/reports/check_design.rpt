@@ -1,0 +1,106 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Dec 24 20:13:41 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     22
+    Unconnected ports (LINT-28)                                    19
+    Shorted outputs (LINT-31)                                       2
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              23
+    Cells do not drive (LINT-1)                                    12
+    Nets connected to multiple pins on same cell (LINT-33)          8
+    Leaf pins connected to undriven nets (LINT-58)                  2
+    Cells have undriven hier pins (LINT-59)                         1
+
+Nets                                                               27
+    Unloaded nets (LINT-2)                                         26
+    Undriven nets (LINT-3)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Processor_Top', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'PC_Unit', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_15' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_16' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C334' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C335' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C336' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'Hazard_Detection_Unit', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'Stack_Pointer_Unit', cell 'C86' does not drive any nets. (LINT-1)
+Warning: In design 'Stack_Pointer_Unit', cell 'C91' does not drive any nets. (LINT-1)
+Warning: In design 'Stack_Pointer_Unit', cell 'C95' does not drive any nets. (LINT-1)
+Warning: In design 'Processor_Top', net 'interrupt_active' driven by pin 'int_unit/interrupt_active' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[0]' driven by pin 'ex_mem_reg/reg_a_data_out[0]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[1]' driven by pin 'ex_mem_reg/reg_a_data_out[1]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[2]' driven by pin 'ex_mem_reg/reg_a_data_out[2]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[3]' driven by pin 'ex_mem_reg/reg_a_data_out[3]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[4]' driven by pin 'ex_mem_reg/reg_a_data_out[4]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[5]' driven by pin 'ex_mem_reg/reg_a_data_out[5]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[6]' driven by pin 'ex_mem_reg/reg_a_data_out[6]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_reg_a_data[7]' driven by pin 'ex_mem_reg/reg_a_data_out[7]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[0]' driven by pin 'ex_mem_reg/PC_out[0]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[1]' driven by pin 'ex_mem_reg/PC_out[1]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[2]' driven by pin 'ex_mem_reg/PC_out[2]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[3]' driven by pin 'ex_mem_reg/PC_out[3]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[4]' driven by pin 'ex_mem_reg/PC_out[4]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[5]' driven by pin 'ex_mem_reg/PC_out[5]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[6]' driven by pin 'ex_mem_reg/PC_out[6]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_pc[7]' driven by pin 'ex_mem_reg/PC_out[7]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_input_en' driven by pin 'ex_mem_reg/input_en_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_output_en' driven by pin 'ex_mem_reg/output_en_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_is_store' driven by pin 'ex_mem_reg/is_store_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_is_load' driven by pin 'ex_mem_reg/is_load_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_stack_op' driven by pin 'ex_mem_reg/stack_op_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_mem_addr_src[0]' driven by pin 'ex_mem_reg/mem_addr_src_out[0]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'ex_mem_mem_addr_src[1]' driven by pin 'ex_mem_reg/mem_addr_src_out[1]' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'id_ex_is_call' driven by pin 'id_ex_reg/is_call_out' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'is_two_byte' driven by pin 'control/is_two_byte' has no loads. (LINT-2)
+Warning: In design 'Processor_Top', net 'sp_write_enable' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'PC_Unit', port 'instr_fetched[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC_Unit', port 'instr_fetched[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC_Unit', port 'instr_fetched[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC_Unit', port 'instr_fetched[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'alu', port 'rb[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'alu', port 'rb[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory', port 'rst' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory', port 'mem_read' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', port 'if_id_instr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', port 'if_id_instr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', port 'if_id_instr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', port 'if_id_instr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', port 'id_ex_mem_read' is not connected to any nets. (LINT-28)
+Warning: In design 'Branch_Unit', port 'id_ex_instr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Branch_Unit', port 'id_ex_instr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Interrupt_Unit', port 'mem_wb_instr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Interrupt_Unit', port 'mem_wb_instr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Output_Unit', port 'id_ex_rb[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Output_Unit', port 'id_ex_rb[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Hazard_Detection_Unit', output port 'pc_stall' is connected directly to output port 'id_ex_flush'. (LINT-31)
+Warning: In design 'Hazard_Detection_Unit', output port 'pc_stall' is connected directly to output port 'if_id_stall'. (LINT-31)
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'id_ex_reg'. (LINT-33)
+   Net 'ra[1]' is connected to pins 'instr_in[3]', 'ra_in[1]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'id_ex_reg'. (LINT-33)
+   Net 'ra[0]' is connected to pins 'instr_in[2]', 'ra_in[0]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'id_ex_reg'. (LINT-33)
+   Net 'rb[1]' is connected to pins 'instr_in[1]', 'rb_in[1]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'id_ex_reg'. (LINT-33)
+   Net 'rb[0]' is connected to pins 'instr_in[0]', 'rb_in[0]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'hazard_unit'. (LINT-33)
+   Net 'ra[1]' is connected to pins 'if_id_ra[1]', 'if_id_instr[3]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'hazard_unit'. (LINT-33)
+   Net 'ra[0]' is connected to pins 'if_id_ra[0]', 'if_id_instr[2]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'hazard_unit'. (LINT-33)
+   Net 'rb[1]' is connected to pins 'if_id_rb[1]', 'if_id_instr[1]''.
+Warning: In design 'Processor_Top', the same net is connected to more than one pin on submodule 'hazard_unit'. (LINT-33)
+   Net 'rb[0]' is connected to pins 'if_id_rb[0]', 'if_id_instr[0]''.
+Warning: In design 'Control_Unit', output port 'reg_write_src[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'reg_file', input pin 'A' of leaf cell 'C177' is connected to undriven net 'sp_write_enable'.  (LINT-58)
+Warning: In design 'reg_file', input pin 'A' of leaf cell 'C180' is connected to undriven net 'sp_write_enable'.  (LINT-58)
+Warning: In design 'Processor_Top', input pin 'sp_write_enable' of hierarchical cell 'rf' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+1

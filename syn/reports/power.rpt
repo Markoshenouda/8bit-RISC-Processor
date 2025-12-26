@@ -1,0 +1,65 @@
+Loading db file '/home/IC/last_version/syn/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : Processor_Top
+Version: K-2015.06
+Date   : Wed Dec 24 20:14:16 2025
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/last_version/syn/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+Processor_Top                          2.89e-02    1.857 6.50e+07    1.951 100.0
+  add_154 (Processor_Top_DW01_inc_1)   6.52e-05 1.40e-04 8.60e+04 2.91e-04   0.0
+  add_521 (Processor_Top_DW01_inc_0)   7.30e-05 1.82e-04 9.70e+04 3.52e-04   0.0
+  out_unit (Output_Unit)               1.13e-04 5.80e-03 1.29e+05 6.04e-03   0.3
+  int_unit (Interrupt_Unit)            4.08e-04 1.34e-02 2.81e+05 1.40e-02   0.7
+  sp_unit (Stack_Pointer_Unit)         3.45e-04 6.86e-03 3.54e+05 7.56e-03   0.4
+    add_31 (Stack_Pointer_Unit_DW01_inc_0)
+                                       6.60e-05 1.40e-04 8.60e+04 2.92e-04   0.0
+  branch_unit (Branch_Unit)               0.000    0.000 1.07e+05 1.07e-04   0.0
+  hazard_unit (Hazard_Detection_Unit)     0.000    0.000 1.08e+05 1.08e-04   0.0
+  fwd_unit (Forwarding_Unit)              0.000    0.000 1.16e+05 1.16e-04   0.0
+  mem_wb_reg (MEM_WB_Register)         7.09e-04 3.70e-02 4.95e+05 3.82e-02   2.0
+  dmem (Data_Memory)                   2.13e-02    1.632 5.60e+07    1.709  87.6
+  ex_mem_reg (EX_MEM_Register)         1.53e-03 5.76e-02 8.58e+05 5.99e-02   3.1
+  ccr_inst (CCR)                       5.67e-05 2.91e-03 9.73e+04 3.06e-03   0.2
+  alu_inst (alu)                          0.000    0.000 2.50e+06 2.50e-03   0.1
+    add_16 (alu_DW01_add_0)               0.000    0.000 2.05e+05 2.05e-04   0.0
+    sub_17 (alu_DW01_sub_0)               0.000    0.000 2.48e+05 2.48e-04   0.0
+    add_18 (alu_DW01_inc_1)               0.000    0.000 9.99e+04 9.99e-05   0.0
+    add_113 (alu_DW01_inc_0)              0.000    0.000 7.92e+04 7.92e-05   0.0
+  id_ex_reg (ID_EX_Register)           1.69e-03 5.53e-02 1.15e+06 5.82e-02   3.0
+  imem_imm (Instruction_Memory_1)         0.000    0.000 1.17e+04 1.17e-05   0.0
+  rf (reg_file)                        3.98e-04 2.35e-02 9.47e+05 2.48e-02   1.3
+  control (Control_Unit)                  0.000    0.000 4.06e+05 4.06e-04   0.0
+  if_id_reg (IF_ID_Register)           5.19e-04 1.34e-02 2.63e+05 1.41e-02   0.7
+  imem (Instruction_Memory_0)             0.000    0.000 1.17e+04 1.17e-05   0.0
+  pc_unit (PC_Unit)                    7.01e-04 8.69e-03 3.14e+05 9.70e-03   0.5
+1
