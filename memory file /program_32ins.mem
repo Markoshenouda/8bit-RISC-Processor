@@ -1,0 +1,462 @@
+// ==========================================
+// COMPREHENSIVE TEST - ALL 32 INSTRUCTIONS
+// 256 bytes memory (0x00 - 0xFF)
+// ==========================================
+
+// [0x00-0x02] TEST 1: NOP
+00
+00
+00
+
+// [0x03-0x04] TEST 2: LDM R0, 10
+C0
+0A
+
+// [0x05-0x06] LDM R1, 20
+C1
+14
+
+// [0x07-0x08] LDM R2, 30
+C2
+1E
+
+// [0x09-0x0A] LDM R3, 255 (SP init)
+C3
+FF
+
+// [0x0B-0x0E] NOPs for hazards
+00
+00
+00
+00
+
+// [0x0F] TEST 3: MOV R1, R1
+15
+
+// [0x10-0x12] NOPs
+00
+00
+00
+
+// [0x13] TEST 4: ADD R0, R1 (10+20=30)
+21
+
+// [0x14-0x17] NOPs
+00
+00
+00
+00
+
+// [0x18] TEST 5: SUB R0, R1 (30-20=10)
+31
+
+// [0x19-0x1C] NOPs
+00
+00
+00
+00
+
+// [0x1D] TEST 6: AND R0, R1
+41
+
+// [0x1E-0x21] NOPs
+00
+00
+00
+00
+
+// [0x22-0x23] Reload: LDM R0, 0xFF
+C0
+FF
+
+// [0x24-0x27] NOPs
+00
+00
+00
+00
+
+// [0x28] TEST 7: OR R0, R1
+51
+
+// [0x29-0x2C] NOPs
+00
+00
+00
+00
+
+// [0x2D-0x2E] TEST 8 Setup: LDM R0, 0x81
+C0
+81
+
+// [0x2F-0x32] NOPs
+00
+00
+00
+00
+
+// [0x33] TEST 8: RLC R0
+60
+
+// [0x34-0x37] NOPs
+00
+00
+00
+00
+
+// [0x38-0x39] TEST 9 Setup: LDM R0, 0x81
+C0
+81
+
+// [0x3A-0x3D] NOPs
+00
+00
+00
+00
+
+// [0x3E] TEST 9: RRC R0
+64
+
+// [0x3F-0x42] NOPs
+00
+00
+00
+00
+
+// [0x43] TEST 10: SETC
+68
+
+// [0x44-0x46] NOPs
+00
+00
+00
+
+// [0x47] TEST 11: CLRC
+6C
+
+// [0x48-0x4A] NOPs
+00
+00
+00
+
+// [0x4B-0x4C] TEST 12 Setup: LDM R0, 0xAA
+C0
+AA
+
+// [0x4D-0x50] NOPs
+00
+00
+00
+00
+
+// [0x51] TEST 12: PUSH R0
+70
+
+// [0x52-0x55] NOPs
+00
+00
+00
+00
+
+// [0x56] TEST 13: POP R1
+75
+
+// [0x57-0x5A] NOPs
+00
+00
+00
+00
+
+// [0x5B] TEST 14: OUT R1
+79
+
+// [0x5C-0x5E] NOPs
+00
+00
+00
+
+// [0x5F] TEST 15: IN R2
+7E
+
+// [0x60-0x63] NOPs
+00
+00
+00
+00
+
+// [0x64-0x65] TEST 16 Setup: LDM R0, 0x0F
+C0
+0F
+
+// [0x66-0x69] NOPs
+00
+00
+00
+00
+
+// [0x6A] TEST 16: NOT R0
+80
+
+// [0x6B-0x6E] NOPs
+00
+00
+00
+00
+
+// [0x6F-0x70] TEST 17 Setup: LDM R0, 0x0F
+C0
+0F
+
+// [0x71-0x74] NOPs
+00
+00
+00
+00
+
+// [0x75] TEST 17: NEG R0
+84
+
+// [0x76-0x79] NOPs
+00
+00
+00
+00
+
+// [0x7A-0x7B] TEST 18 Setup: LDM R0, 0x05
+C0
+05
+
+// [0x7C-0x7F] NOPs
+00
+00
+00
+00
+
+// [0x80] TEST 18: INC R0
+88
+
+// [0x81-0x84] NOPs
+00
+00
+00
+00
+
+// [0x85] TEST 19: DEC R0
+8C
+
+// [0x86-0x89] NOPs
+00
+00
+00
+00
+
+// [0x8A-0x8B] TEST 20-23 Setup: LDM R1, 150
+C1
+96
+
+// [0x8C-0x8F] NOPs
+00
+00
+00
+00
+
+// [0x90] JZ R1 (should NOT jump, Z=0)
+91
+
+// [0x91-0x92] NOPs
+00
+00
+
+// [0x93-0x94] Set Z: LDM R0, 0
+C0
+00
+
+// [0x95-0x98] NOPs
+00
+00
+00
+00
+
+// [0x99] SUB R0, R0 (sets Z=1)
+30
+
+// [0x9A-0x9D] NOPs
+00
+00
+00
+00
+
+// [0x9E-0x9F] LDM R1, 163
+C1
+A3
+
+// [0xA0-0xA3] NOPs
+00
+00
+00
+00
+
+// [0xA4] JZ R1 (should jump)
+91
+
+// [0xA5-0xA6] NOPs
+00
+00
+
+// [0xA7-0xA8] TEST 24 Setup: LDM R0, 3
+C0
+03
+
+// [0xA9-0xAC] NOPs
+00
+00
+00
+00
+
+// [0xAD-0xAE] LDM R1, 178
+C1
+B2
+
+// [0xAF-0xB2] NOPs
+00
+00
+00
+00
+
+// [0xB3] TEST 24: LOOP R0, R1
+A1
+
+// [0xB4-0xB7] NOPs
+00
+00
+00
+00
+
+// [0xB8-0xB9] TEST 25 Setup: LDM R1, 190
+C1
+BE
+
+// [0xBA-0xBD] NOPs
+00
+00
+00
+00
+
+// [0xBE] TEST 25: JMP R1
+B1
+
+// [0xBF] NOP
+00
+
+// [0xC0-0xC1] TEST 26-27 Setup: LDM R1, 203
+C1
+CB
+
+// [0xC2-0xC5] NOPs
+00
+00
+00
+00
+
+// [0xC6] CALL R1
+B5
+
+// [0xC7-0xCA] NOPs (return point at 0xCA)
+00
+00
+00
+00
+
+// [0xCB-0xCC] Subroutine: LDM R0, 0x99
+C0
+99
+
+// [0xCD-0xD0] NOPs
+00
+00
+00
+00
+
+// [0xD1] RET
+B9
+
+// [0xD2-0xD3] NOPs
+00
+00
+
+// [0xD4-0xD5] TEST 28-29 Setup: LDM R0, 0x42
+C0
+42
+
+// [0xD6-0xD9] NOPs
+00
+00
+00
+00
+
+// [0xDA-0xDB] STD R0, 100
+C8
+64
+
+// [0xDC-0xDF] NOPs
+00
+00
+00
+00
+
+// [0xE0-0xE1] LDD R1, 100
+C5
+64
+
+// [0xE2-0xE5] NOPs
+00
+00
+00
+00
+
+// [0xE6-0xE7] TEST 30-31 Setup: LDM R0, 100
+C0
+64
+
+// [0xE8-0xEB] NOPs
+00
+00
+00
+00
+
+// [0xEC-0xED] LDM R1, 0x88
+C1
+88
+
+// [0xEE-0xF1] NOPs
+00
+00
+00
+00
+
+// [0xF2] STI R1, R0
+E1
+
+// [0xF3-0xF6] NOPs
+00
+00
+00
+00
+
+// [0xF7] LDI R2, R0
+D2
+
+// [0xF8-0xFB] NOPs
+00
+00
+00
+00
+
+// [0xFC-0xFD] END: LDM R1, 252
+C1
+FC
+
+// [0xFE] JMP R1 (infinite loop)
+B1
+
+// [0xFF] NOP
+00
